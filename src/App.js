@@ -11,7 +11,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import PageNotFound from './pages/PageNotFound';
 import Contact from './pages/Contact';
-import Projects from './pages/projects/index';
+import ProjectsIndex from './pages/projects/Index';
+import ProjectsShow from './pages/projects/Show';
 
 
 const App = () => {
@@ -23,7 +24,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<PageNotFound />} /> 
-        <Route path="/projects" element={<Projects />} /> 
+        <Route path="/projects" element={<ProjectsIndex />} /> 
+        <Route path="/projects/:slug" element={<ProjectsShow/>} /> 
 
       </Routes>
       <Footer />
