@@ -7,12 +7,17 @@
 			{
 				"caption": "Screensho of the code",
 				"path": "https://picsum.photos/200"
+			},
+			{
+				"caption": "Screensho of the code",
+				"path": "https://picsum.photos/200"
 			}
 		],
 		"date": "2023",
 		"tags": ["JavaScript", "React", "HTML", "Front-end"],
 		"website": "https://google.com",
-		"github": "https://github.com/JudeT808s/react-portfolio.git"
+		"github": "https://github.com/JudeT808s/react-portfolio.git",
+		"demo": "true"
 	},
 	{
 		"slug": "giphy-app",

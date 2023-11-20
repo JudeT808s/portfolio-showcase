@@ -6,9 +6,7 @@ const Home = () => {
     <>
           <Hero/>
 
-    <div>
-          <h2>Hello from Home Page</h2>
-      </div>
+ 
     </>
   )
 };
