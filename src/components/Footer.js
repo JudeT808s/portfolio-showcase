@@ -7,7 +7,7 @@ const Footer = () => {
         <header className="footer-title">Navigation</header>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/activity">Activity</Link>
       </nav>
       <nav>
         <header className="footer-title">Projects</header>

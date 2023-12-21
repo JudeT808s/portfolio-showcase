@@ -13,7 +13,7 @@ import { ThemeProvider } from './components/ThemeContext';
 import Home from './pages/Home';
 import About from './pages/About';
 import PageNotFound from './pages/PageNotFound';
-import Contact from './pages/Contact';
+import Activity from './pages/Activity';
 import ProjectsIndex from './pages/projects/Index';
 import ProjectsShow from './pages/projects/Show';
 
@@ -22,16 +22,7 @@ const App = () => {
   const [imageList, setImageList] = useState([]);
 
   
-  // useEffect(() => {
-  //   listAll(ref(storage, 'images'))
-  //     .then((res) => {
-  //       setImageList(res.items);
-  //       console.log(res.items);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, []); 
+
 
   return (
     <ThemeProvider>
@@ -42,7 +33,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
          
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/activity" element={<Activity />} />
           <Route path="*" element={<PageNotFound />} />
           <Route path="/projects" element={<ProjectsIndex />} />
           <Route path="/projects/:slug" element={<ProjectsShow />} />

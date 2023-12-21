@@ -12,7 +12,7 @@ const Navbar = () => {
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/activity">Activity</Link>
           </ul>
         </div>
       </div>
@@ -23,10 +23,7 @@ const Navbar = () => {
         <ThemeToggle />
       </div>
     </div>
-    // <div>
-    //   <Link to="/">Home</Link>
-    //   <Link to="/about">About</Link>
-    // </div>
+  
   );
 };
 
