@@ -1,12 +1,9 @@
+import Hero from '../components/Hero';
 
 const About = () => {
-    return (
-        <div>
-        <h2>Hello from About Page</h2>
-        <button class="btn btn-secondary">Two</button>
+  return (
+   <Hero/>
+  );
+};
 
-        </div>
-      );
-    };
-    
-    export default About;
+export default About;

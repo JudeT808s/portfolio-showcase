@@ -1,23 +1,37 @@
 [
 	{
-		"slug": "todo-app",
-		"title": "Todo App",
-		"description": "This is a Todo App I made using React. I learned about localStorage",
+		"slug": "course-app",
+		"title": "College Api App",
+		"description": "An app that uses an API to display college courses using Tailwind.",
 		"images": [
 			{
-				"caption": "Screensho of the code",
-				"path": "https://picsum.photos/200"
+				"caption": "Screenshot of Home Page",
+				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Fcollege-home.PNG?alt=media&token=77c2faed-a08d-467a-abac-a340155ba026"
 			},
 			{
-				"caption": "Screensho of the code",
-				"path": "https://picsum.photos/200"
+				"caption": "Screenshot of Lecturers Page",
+				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Fcollege-lectures.PNG?alt=media&token=0eaf9026-c00b-4868-b18d-275574dd4b71"
 			}
 		],
 		"date": "2023",
-		"tags": ["JavaScript", "React", "HTML", "Front-end"],
-		"website": "https://google.com",
-		"github": "https://github.com/JudeT808s/react-portfolio.git",
-		"demo": "true"
+		"tags": ["JavaScript", "React", "HTML", "Front-end", "Rest Client", "API"],
+		"website": "https://my-college-73cd1.web.app",
+		"github": "https://github.com/JudeT808s/college-api.git"
+	},
+	{
+		"slug": "countries-app",
+		"title": "Countries App",
+		"description": "An app that uses an API to display countries and an additional API that gathers weather information, styled with Bootstrap.",
+		"images": [
+			{
+				"caption": "Screenshot of Home Page for countries app",
+				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Fcountries.PNG?alt=media&token=f2d83f09-17df-4531-b3af-0e4db1b429c5"
+			}
+		],
+		"date": "2023",
+		"tags": ["JavaScript", "React", "HTML", "Front-end", "Rest Client", "API"],
+		"website": " https://countries-page.web.app",
+		"github": "https://github.com/JudeT808s/react-portfolio.git"
 	},
 	{
 		"slug": "giphy-app",
@@ -31,7 +45,119 @@
 		],
 		"date": "2023",
 		"tags": ["JavaScript", "React", "HTML", "Front-end", "Rest Client", "API"],
-		"website": "",
+		"website": "https://jude-portfolio-c5c54.web.app/",
 		"github": "https://github.com/JudeT808s/my-react-activities.git"
+	},
+	{
+		"slug": "todo-app",
+		"title": "Todo App",
+		"description": "This is a Todo App I made using React. I learned about localStorage",
+		"images": [
+			{
+				"caption": "Screenshot of ToDo App",
+				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2FToDoList.PNG?alt=media&token=7ffcc58d-4b87-4b56-9379-5b5670882f04"
+			},
+			{
+				"caption": "Screenshot of the code",
+				"path": "https://picsum.photos/200"
+			}
+		],
+		"date": "2023",
+		"tags": ["JavaScript", "React", "HTML", "Front-end"],
+		"website": "https://jude-portfolio-c5c54.web.app",
+		"github": "https://github.com/JudeT808s/react-portfolio.git",
+		"demo": "true"
+	},
+
+	{
+		"slug": "laravel-city-farm-app",
+		"title": "St Annes City Farm",
+		"description": "This project was made for a local charity in North Dublin. It was made using Laravel and Bootstrap.",
+		"images": [
+			{
+				"caption": "Screenshot of St Annes City Farm Home Page",
+				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Fstannes-home-admin.PNG?alt=media&token=df9dbf40-7efb-4ae0-8710-2764c81a2700"
+			},
+			{
+				"caption": "Backend showing Polymorphic relationship between animals and images",
+				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Fstannes-morph-to.PNG?alt=media&token=88dd44ab-7b4d-4394-9788-4592a81dd598"
+			}
+		],
+		"date": "2022",
+		"tags": ["PHP", "Laravel", "HTML", "Front-end", "Back-end", "Bootstrap"],
+		"website": "",
+		"github": "https://github.com/JudeT808s/StAnnesFarm_Laravel.git"
+	},
+	{
+		"slug": "data-visualisation-app",
+		"title": "Data Visualisation App",
+		"description": "",
+		"images": [
+			{
+				"caption": "Data Visualisation of Ukrainians in Ireland",
+				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2FDataVis.PNG?alt=media&token=2c64bec8-8c6c-44f2-aa46-013f1b818e5b"
+			}
+		],
+		"date": "2022",
+		"tags": ["JavaScript", "P5", "HTML", "Data-visualisation", "Front-end"],
+		"website": "",
+		"github": "https://github.com/JudeT808s/Beginning.git"
+	},
+	{
+		"slug": "sass-responsive-website",
+		"title": "Events app",
+		"description": "This is an events app that uses Bootstrap and Sass to create a responsive website.",
+		"images": [
+			{
+				"caption": "Screenshot of Home Screen of On The Fly",
+				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2FOnTheFly-Home.PNG?alt=media&token=c24abf1b-d2d9-4f39-8d1d-7300e6e5f8ac"
+			},
+			{
+				"caption": "Screenshot of the show page of On The Fly",
+				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2FOnTheFly-Show.PNG?alt=media&token=1e893b92-87a5-4816-8619-baa0d4803cf0"
+			}
+		],
+		"date": "2022",
+		"tags": ["JavaScript", "React", "HTML", "Front-end"],
+		"website": "https://frolicking-travesseiro-77e61a.netlify.app/",
+		"github": "https://github.com/JudeT808s/OnTheFly_BS/tree/Web-building"
+	},
+	{
+		"slug": "php-news-app",
+		"title": "Modern World Newespaper app",
+		"description": "This is a website that uses a backend database made with MySql and PHP. It has a minimalist colour palette and uses font-weight and styling to differentiate each section. Much like a classical newspaper",
+		"images": [
+			{
+				"caption": "Screenshot of the code",
+				"path": "https://picsum.photos/200"
+			},
+			{
+				"caption": "Screenshot of the code",
+				"path": "https://picsum.photos/200"
+			}
+		],
+		"date": "2021",
+		"tags": ["PHP", "Front-end", "Back-end", "CSS", "HTML", "MySql"],
+		"website": "",
+		"github": "https://github.com/JudeT808s/Modern_World.git"
+	},
+	{
+		"slug": "css-webpage",
+		"title": "Premier League Website",
+		"description": "This a website made to replicate the 2021 Premier League website. It uses CSS and HTML to create a responsive website. It also uses a CSS grid to create a responsive layout.",
+		"images": [
+			{
+				"caption": "Screenshot of the code",
+				"path": "https://picsum.photos/200"
+			},
+			{
+				"caption": "Screenshot of the code",
+				"path": "https://picsum.photos/200"
+			}
+		],
+		"date": "2021",
+		"tags": ["HTML", "CSS", "Front-end"],
+		"website": "https://google.com",
+		"github": ""
 	}
 ]
