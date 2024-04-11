@@ -13,7 +13,7 @@ const Hero = () => {
         <p className="mb-4">
           Hello! I'm Jude McCrea, a passionate and creative computing student in IADT. I have a strong foundation in building modern,
           responsive web applications using technologies like React, Tailwind
-          CSS, and Firebase.
+          CSS and Firebase.
         </p>
 
         <p className="mb-4">
@@ -24,6 +24,9 @@ const Hero = () => {
         <p className="mb-4">
           I'm always eager to learn new technologies and explore
           innovative solutions to solve real-world problems.
+        </p>
+        <p className="mb-4">
+          Currently I am working as a Database Administrator intern for GladCloud.
         </p>
 
         <p className="mb-4">
