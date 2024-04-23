@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { storage } from '../firebase';
 import { ref, listAll, getDownloadURL } from 'firebase/storage';
 import Hero from '../components/Hero'
-import Projects from './projects/Index'
+import Projects from './projects/index'
 
 const Home = () => {
   const [imageList, setImageList] = useState([]);
