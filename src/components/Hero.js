@@ -11,7 +11,7 @@ const Hero = () => {
         <h1 className={`${isDarkMode ? 'text-white' : 'text-black'}`}>About Me</h1>
         <div className={`max-w-3xl mt-8 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>
         <p className="mb-4">
-          Hello! I'm Jude McCrea, a passionate and creative computing student in IADT. I have a strong foundation in building modern,
+          Hello! I'm Jude McCrea, a recent graduate from IADT. I have a strong foundation in building modern,
           responsive web applications using technologies like React, Tailwind
           CSS and Firebase.
         </p>
@@ -25,9 +25,7 @@ const Hero = () => {
           I'm always eager to learn new technologies and explore
           innovative solutions to solve real-world problems.
         </p>
-        <p className="mb-4">
-          Currently I am working as a Database Administrator intern for GladCloud.
-        </p>
+        
 
         <p className="mb-4">
           Let's connect! Feel free to reach out to me via email at{' '}
