@@ -145,6 +145,7 @@
 		"slug": "css-webpage",
 		"title": "Premier League Website",
 		"description": "This a website made to replicate the 2021 Premier League website. It uses CSS and HTML to create a responsive website. It also uses a CSS grid to create a responsive layout.",
+
 		"images": [
 			{
 				"caption": "Screenshot of the code",
@@ -156,8 +157,65 @@
 			}
 		],
 		"date": "2021",
-		"tags": ["HTML", "CSS", "Front-end"],
+		"tags": ["HTML", "CSS"],
 		"website": "https://google.com",
 		"github": ""
-	}
+	},
+	{
+		"slug": "python-football-predictor",
+		"title": "Football expected goals predictor",
+		"description": "Using Python, Flask and APIs to track match form results and calculates probabilities of expected results for future games",
+		"images": [
+			{
+				"caption": "Screenshot of the code",
+				"path": "https://picsum.photos/200"
+			},
+			{
+				"caption": "Screenshot of the code",
+				"path": "https://picsum.photos/200"
+			}
+		],
+		"date": "2024",
+		"tags": ["HTML", "CSS", "Python", "Flask", "API", "Data-visualisation"],
+		"website": "https://google.com",
+		"github": "https://github.com/JudeT808s/Predictor.git"
+	},
+	{
+		"slug": "fullstack-movie-app",
+		"title": "Lora Fullstack Mobile App",
+		"description": "Using React Native and Expo to create a mobile app that uses an API to display movies. It also uses a backend database made with AppWrite and Styling with nativeWind enabling seamless sharing of AI videos within the community.",
+		"images": [
+			{
+				"caption": "Screenshot of the code",
+				"path": "https://picsum.photos/200"
+			},
+			{
+				"caption": "Screenshot of the code",
+				"path": "https://picsum.photos/200"
+			}
+		],
+		"date": "2024",
+		"tags": ["HTML", "CSS", "React Native", "React", "Expo"],
+		"website": "https://google.com",
+		"github": "https://github.com/JudeT808s/fullstack-reactNative.git"
+	},
+	{
+	"slug": "beer-pairing-app",
+	"title": "Beer Pairer App",
+	"description": "Using React Native, Expo and OpenFoodFacts API and AI to create a beer pairing app.  It also uses AI to generate suggestions for beer pairings.",
+	"images": [
+		{
+			"caption": "Screenshot of the code",
+			"path": "https://picsum.photos/200"
+		},
+		{
+			"caption": "Screenshot of the code",
+			"path": "https://picsum.photos/200"
+		}
+	],
+	"date": "2024",
+	"tags": ["HTML", "CSS", "React Native", "React", "Expo", "API", "AI", "AI-wrapper"],
+	"website": "https://google.com",
+	"github": "https://github.com/JudeT808s/beer-pairing.git"
+}
 ]

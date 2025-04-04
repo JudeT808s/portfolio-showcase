@@ -4,12 +4,14 @@ import projectsJSON from '../../assets/data/projects.json';
 import ProjectCard from '../../components/ProjectCard';
 import ProjectFilter from '../../components/TagDropdown'; 
 import { useTheme } from '../../components/ThemeContext';
+import { Container } from 'react-bootstrap';
 
 const Index = () => {
+  const isDarkMode = useTheme();
   const [projects, setProjects] = useState(projectsJSON);
   const { slug } = useParams();
-  const { isDarkMode } = useTheme();
   const allTags = [...new Set(projectsJSON?.flatMap(project => project.tags) || [])];
+  const containerClass = isDarkMode ? 'dark-theme' : 'light-theme'; // Class for the theme
 
   const [selectedTag, setSelectedTag] = useState('');
 
@@ -34,7 +36,7 @@ const Index = () => {
 
   return (
     <>
-      <ProjectFilter tags={allTags} selectedTag={selectedTag} onSelectTag={handleTagChange} />
+      <ProjectFilter tags={allTags} selectedTag={selectedTag} onSelectTag={handleTagChange} className={containerClass}/>
       <div className={`grid grid-cols-2 gap-4 place-items-center mt-10${isDarkMode ? 'dark' : 'light'}`}>
         {projects.map((project, i) => (
           <ProjectCard key={i} project={project} />

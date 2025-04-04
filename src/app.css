@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    width: 100%;  
+  }
+
+  /* Default theme (Light mode) */
+  body {
+    background-color: white;
+    color: #1e1e1e;
+  }
+  
+  /* Dark theme styles */
+  body.dark-theme {
+    background-color: #1e1e1e;  /* Dark background */
+    color: white;               /* Light text */
+  }
+  
+  /* Ensure the container has a background color based on theme */
+  body.dark-theme .container, 
+  body.dark-theme .navbar,
+  body.dark-theme .menu {
+    background-color: #1e1e1e;  
+    color: white;                
+  }
+  
+  /* Light theme styles */
+  body.light-theme {
+    background-color: white;  /* Light background */
+    color: black;             /* Dark text */
+  }
+  
+  /* Containers in light mode */
+  body.light-theme .container,
+  body.light-theme .navbar,
+  body.light-theme .menu {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Optional: Customize the navbar for dark/light themes */
+  .navbar {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  

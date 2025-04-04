@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import { storage } from './firebase';
 import { ref, listAll } from 'firebase/storage';
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 // import components
 import Navbar from './components/Navbar';

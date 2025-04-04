@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
+import { useTheme } from '../components/ThemeContext';
 
 const ProjectCard = ({ project }) => {
+    const { isDarkMode } = useTheme(); 
     const tags = project.tags.map((tag, i) => (
         <div key={i} className="badge badge-neutral">
             {tag}
@@ -8,12 +10,12 @@ const ProjectCard = ({ project }) => {
     ));
 
     return (
-        <div className="card w-96 bg-base-100 shadow-xl">
-            <figure>
-                <img src={project.images[0].path} alt={`Project: ${project.title}`} />
+        <div className="card w-96 bg-base-100 shadow-xl mb-2">
+            <figure className='padding-4'>
+                <img className= 'mt-2 max-h-[200px] max-w-[250px]'src={project.images[0].path} alt={`Project: ${project.title}`} />
             </figure>
-            <div className="card-body">
-                <h2 className="card-title">
+            <div className={`card-body ${isDarkMode ? 'text-white' : 'text-black'}`}>
+                <h2 className={`card-title ${isDarkMode ? 'text-white' : 'text-black'}`}>
                     {project.title}
                 </h2>
                 <p>{project.description}</p>
