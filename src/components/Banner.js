@@ -2,10 +2,8 @@ import { useState, useEffect, useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
-import {  useTheme } from "./ThemeContext"; // Updated import
 
 export const Banner = () => {
-    const { isDarkMode } = useTheme(); // Use the useTheme hook
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
@@ -14,8 +12,8 @@ export const Banner = () => {
     "Full Stack Developer",
   ];
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const period = 500;
+  const [delta, setDelta] = useState(500 - Math.random() * 900); // Slower initial typing
+  const period = 1000; // Longer pause before deleting
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -25,7 +23,7 @@ export const Banner = () => {
     return () => {
       clearInterval(ticker);
     };
-  }, [text]);
+  }, [text, delta, loopNum, isDeleting]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -37,7 +35,7 @@ export const Banner = () => {
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
+      setDelta((prevDelta) => prevDelta * 0.7); // Slower deletion
     }
 
     if (!isDeleting && updatedText === fullText) {
@@ -46,14 +44,13 @@ export const Banner = () => {
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setDelta(500);
+      setDelta(1000); // Longer pause before next word
     }
   };
-  const bannerClass = isDarkMode ? 'navbar bg-neutral text-neutral-content' : 'navbar bg-base-100';
 
   return (
-    <section className={bannerClass} id="home">
-      <Container className={`${isDarkMode ? 'dark' : 'light'}`}>
+    <section id="home">
+      <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <div className="banner-text">

@@ -1,12 +1,10 @@
 import { Link } from 'react-router-dom';
-import { useTheme } from '../components/ThemeContext';
 
 
 const Footer = () => {
-  const { isDarkMode } = useTheme();
 
   return (
-    <footer className={`footer p-10 mt-5 ${isDarkMode ? 'dark' : 'light'}`}>
+    <footer className={`footer p-10 mt-5 `}>
       <nav>
         <header className="footer-title">Navigation</header>
         <Link to="/">Home</Link>

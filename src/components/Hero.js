@@ -1,33 +1,31 @@
 
 
-import { useTheme } from '../components/ThemeContext';
 const Hero = () => {
-      const { isDarkMode } = useTheme(); 
 
     return (
         
-        <div className={`flex flex-col justify-center items-center mb-3${isDarkMode ? 'dark' : 'light'}`}>
+        <div className='flex flex-col justify-center items-center mb-96'>
         <img src="https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2F1701554032733.jpg?alt=media&token=3f180279-fea8-45d5-a9af-62d3385881a8" alt="Jude McCrea" className="w-32 h-32 rounded-full" />
-        <h1 className={`${isDarkMode ? 'text-white' : 'text-black'}`}>About Me</h1>
-        <div className={`max-w-3xl mt-8 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>
-        <p className={`${isDarkMode ? 'text-white' : 'text-black'} mb-4`}>
+        <h1 >About Me</h1>
+        <div className='max-w-3xl mt-8'>
+        <p className= "mb-4">
           Hello! I'm Jude McCrea, a recent graduate from IADT. I have a strong foundation in building modern,
           responsive web applications using technologies like React, Tailwind
           CSS and Firebase.
         </p>
 
-        <p className={`${isDarkMode ? 'text-white' : 'text-black'}`}>
+        <p className= "mb-4">
           I love turning ideas into reality and enjoy the process
           of crafting beautiful and functional user interfaces.
         </p>
 
-        <p className={`${isDarkMode ? 'text-white' : 'text-black'} mb-4`}>
+        <p className= "mb-4"> 
           I'm always eager to learn new technologies and explore
           innovative solutions to solve real-world problems.
         </p>
         
 
-        <p className={`${isDarkMode ? 'text-white' : 'text-black'} mb-4`}>
+        <p className= "mb-4"> 
           Let's connect! Feel free to reach out to me via email at{' '}
           <a href="mailto:jaytbas@gmail.com" className="text-blue-500">
             jaytbas@gmail.com

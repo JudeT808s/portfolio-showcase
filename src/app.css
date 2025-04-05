@@ -1,50 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%; 
-    width: 100%;  
-  }
 
-  /* Default theme (Light mode) */
-  body {
-    background-color: white;
-    color: #1e1e1e;
-  }
-  
-  /* Dark theme styles */
-  body.dark-theme {
-    background-color: #1e1e1e;  /* Dark background */
-    color: white;               /* Light text */
-  }
-  
-  /* Ensure the container has a background color based on theme */
-  body.dark-theme .container, 
-  body.dark-theme .navbar,
-  body.dark-theme .menu {
-    background-color: #1e1e1e;  
-    color: white;                
-  }
-  
-  /* Light theme styles */
-  body.light-theme {
-    background-color: white;  /* Light background */
-    color: black;             /* Dark text */
-  }
-  
-  /* Containers in light mode */
-  body.light-theme .container,
-  body.light-theme .navbar,
-  body.light-theme .menu {
-    background-color: white;
-    color: black;
-  }
-  
-  /* Optional: Customize the navbar for dark/light themes */
-  .navbar {
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  
+/* Base styles for the body (these will be defaults if no theme class is applied) */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme changes */
+}
+
+/* Light theme styles */
+body.light-theme {
+  background-color: white;
+  color: #1e1e1e; /* Or your preferred light text color */
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background-color: #1e1e1e; /* Or your preferred dark background color */
+  color: white; /* Or your preferred dark text color */
+}
+
+/* You can also add theme-specific styles for other common elements here */
+body.light-theme .container {
+  background-color: white;
+  color: black;
+}
+
+body.dark-theme .container {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.light-theme .navbar {
+  background-color: white;
+  color: black;
+}
+
+body.dark-theme .navbar {
+  background-color: #1e1e1e; /* A slightly darker shade for dark mode navbar */
+  color: white;
+}
+
+body.light-theme .menu {
+  background-color: white;
+  color: black;
+}
+
+body.dark-theme .menu {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+/* Add more theme-specific styles for other elements as needed */
