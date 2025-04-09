@@ -7,54 +7,42 @@ import ProjectFilter from '../../components/TagDropdown';
 const ITEMS_PER_PAGE = 3;
 
 const Index = () => {
-  const [projects, setProjects] = useState(projectsJSON);
   const { slug } = useParams();
-  const allTags = [...new Set(projectsJSON?.flatMap(project => project.tags) || [])];
+  const allTags = [...new Set(projectsJSON?.flatMap((project) => project.tags) || [])];
 
   const [selectedTag, setSelectedTag] = useState('');
+  const [sortOrder, setSortOrder] = useState('desc');
+  const [filteredProjects, setFilteredProjects] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [sortOrder, setSortOrder] = useState('desc'); // Default sorting order is descending
+
+  useEffect(() => {
+    let updated = projectsJSON;
+
+    if (slug) {
+      updated = updated.filter((p) => p.slug === slug);
+    } else if (selectedTag) {
+      updated = updated.filter((p) => p.tags.includes(selectedTag));
+    }
+
+    updated = [...updated].sort((a, b) =>
+      sortOrder === 'asc' ? a.date - b.date : b.date - a.date
+    );
+
+    setFilteredProjects(updated);
+    setCurrentPage(1);
+  }, [slug, selectedTag, sortOrder]);
 
   const handleTagChange = (tag) => {
     setSelectedTag(tag);
-    setCurrentPage(1); // Reset to first page on tag change
-    let filteredProjects = projectsJSON;
-    if (tag) {
-      filteredProjects = filteredProjects.filter((p) => p.tags.includes(tag));
-    }
-    sortProjects(filteredProjects, sortOrder); // Re-sort after filtering
   };
 
   const handleSortChange = (order) => {
     setSortOrder(order);
-    sortProjects(projects, order); // Re-sort when order changes
   };
 
-  const sortProjects = (projectsToSort, order) => {
-    const sortedProjects = [...projectsToSort].sort((a, b) => {
-      if (order === 'asc') {
-        return a.date - b.date; 
-      } else {
-        return b.date - a.date; 
-      }
-    });
-    setProjects(sortedProjects);
-  };
-
-  useEffect(() => {
-    if (slug) {
-      const filteredProjects = projectsJSON?.filter((p) => p.slug === slug) || [];
-      sortProjects(filteredProjects, sortOrder);
-    } else {
-      sortProjects(projectsJSON, sortOrder);
-    }
-    setCurrentPage(1); // Reset on slug change
-  }, [slug]);
-
-  // Pagination logic
+  const totalPages = Math.ceil(filteredProjects.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const paginatedProjects = projects.slice(startIndex, startIndex + ITEMS_PER_PAGE);
-  const totalPages = Math.ceil(projects.length / ITEMS_PER_PAGE);
+  const paginatedProjects = filteredProjects.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
   const goToPage = (page) => {
     if (page >= 1 && page <= totalPages) {
@@ -63,33 +51,38 @@ const Index = () => {
   };
 
   return (
-    <>
+    <div className="px-4 sm:px-6 md:px-12">
       <ProjectFilter tags={allTags} selectedTag={selectedTag} onSelectTag={handleTagChange} />
-      
+
       {/* Sorting Buttons */}
-      <div className="flex justify-center mt-4 space-x-4">
+      <div className="flex flex-col sm:flex-row justify-center items-center mt-4 gap-2 sm:gap-4">
         <button
           onClick={() => handleSortChange('asc')}
-          className={`px-4 py-2 rounded ${sortOrder === 'asc' ? 'bg-blue-500 text-white' : 'bg-neutral-400'}`}
+          className={`px-4 py-2 rounded w-full sm:w-auto ${sortOrder === 'asc' ? 'btn-primary text-white' : 'bg-neutral-400'}`}
         >
           Sort by Year (Ascending)
         </button>
         <button
           onClick={() => handleSortChange('desc')}
-          className={`px-4 py-2 rounded ${sortOrder === 'desc' ? 'bg-blue-500 text-white' : 'bg-neutral-400'}`}
+          className={`px-4 py-2 rounded w-full sm:w-auto ${sortOrder === 'desc' ? 'btn-primary text-white' : 'bg-neutral-400'}`}
         >
           Sort by Year (Descending)
         </button>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 place-items-center mt-10">
-        {paginatedProjects.map((project, i) => (
-          <ProjectCard key={i} project={project} />
-        ))}
-      </div>
+      {/* Project Grid */}
+      {paginatedProjects.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 place-items-center mt-10">
+          {paginatedProjects.map((project, i) => (
+            <ProjectCard key={i} project={project} />
+          ))}
+        </div>
+      ) : (
+        <p className="text-center mt-10 text-gray-500">No projects found.</p>
+      )}
 
       {/* Pagination Controls */}
-      <div className="flex justify-center mt-6 space-x-2">
+      <div className="flex flex-wrap justify-center items-center mt-6 gap-2">
         <button
           onClick={() => goToPage(currentPage - 1)}
           disabled={currentPage === 1}
@@ -101,7 +94,7 @@ const Index = () => {
           <button
             key={i}
             onClick={() => goToPage(i + 1)}
-            className={`px-4 py-2 rounded ${currentPage === i + 1 ? 'bg-blue-500 text-white' : 'bg-neutral-400'}`}
+            className={`px-4 py-2 rounded ${currentPage === i + 1 ? 'btn-primary text-white' : 'bg-neutral-400'}`}
           >
             {i + 1}
           </button>
@@ -114,7 +107,7 @@ const Index = () => {
           Next
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

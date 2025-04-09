@@ -52,8 +52,14 @@ export const Banner = () => {
     <section id="home">
       <Container>
         <Row className="align-items-center">
+        <Col xs={12} md={6} xl={5}>
+            <img
+              src="https://media.licdn.com/dms/image/v2/D4E03AQHmexaZOYA-Bw/profile-displayphoto-shrink_800_800/B4EZTwwQ..GwAc-/0/1739205973694?e=1749081600&v=beta&t=E3UK9xQ2mWCRmY-rBX9YgsdQDelAuqH0AijfwZRyCi8"
+              alt="Header Img"
+            />
+          </Col>
           <Col xs={12} md={6} xl={7}>
-            <div className="banner-text">
+            <div className="banner-text flex-start">
               <h1>
                 {`Hi! I'm Jude, I'm an aspiring`} <span className="wrap">{text}</span>
               </h1><br/>
@@ -62,7 +68,7 @@ export const Banner = () => {
                 responsive web applications. I specialize in front-end
                 development, but I'm also proficient in back-end technologies.
               </p>
-            <p className="flex px-2">
+            <p className="flex px-2 mt-3">
               <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
               <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" /></a>
               <a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="36" height="36" alt="Git" />
@@ -76,12 +82,7 @@ export const Banner = () => {
               </button>
             </div>
           </Col>
-          <Col xs={12} md={6} xl={5}>
-            <img
-              src="https://media.licdn.com/dms/image/v2/D4E03AQHmexaZOYA-Bw/profile-displayphoto-shrink_800_800/B4EZTwwQ..GwAc-/0/1739205973694?e=1749081600&v=beta&t=E3UK9xQ2mWCRmY-rBX9YgsdQDelAuqH0AijfwZRyCi8"
-              alt="Header Img"
-            />
-          </Col>
+          
         </Row>
       </Container>
     </section>

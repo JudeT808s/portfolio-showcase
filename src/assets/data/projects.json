@@ -149,7 +149,7 @@
 		"images": [
 			{
 				"caption": "Screenshot of the code",
-				"path": "https://picsum.photos/200"
+				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2FPL.png?alt=media&token=9d00e9c4-82ce-4e29-b290-66d421180160"
 			},
 			{
 				"caption": "Screenshot of the code",
@@ -158,7 +158,7 @@
 		],
 		"date": "2021",
 		"tags": ["HTML", "CSS"],
-		"website": "https://google.com",
+		"website": "",
 		"github": ""
 	},
 	{
@@ -177,26 +177,39 @@
 		],
 		"date": "2024",
 		"tags": ["HTML", "CSS", "Python", "Flask", "API", "Data-visualisation"],
-		"website": "https://google.com",
+		"website": "",
 		"github": "https://github.com/JudeT808s/Predictor.git"
 	},
 	{
 		"slug": "fullstack-movie-app",
 		"title": "Lora Fullstack Mobile App",
-		"description": "Using React Native and Expo to create a mobile app that uses an API to display movies. It also uses a backend database made with AppWrite and Styling with nativeWind enabling seamless sharing of AI videos within the community.",
+		"description": "Using React Native and Expo to create a mobile app that uses an API to display generated Content. It also uses a backend database made with AppWrite and Styling with nativeWind enabling seamless sharing of AI videos within the community.",
 		"images": [
 			{
-				"caption": "Screenshot of the code",
-				"path": "https://picsum.photos/200"
+				"caption": "Screenshot of the Landing Page",
+				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Faora02.jpeg?alt=media&token=3af2ff3d-b499-4f0a-bdf2-6bbe14105d82"
 			},
 			{
-				"caption": "Screenshot of the code",
-				"path": "https://picsum.photos/200"
+				"caption": "Screenshot of the Sign up Screen",
+				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Faora03.jpeg?alt=media&token=3af2ff3d-b499-4f0a-bdf2-6bbe14105d82"
+			},
+			{
+				"caption": "Screenshot of the Home Screen",
+				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Faora04.jpeg?alt=media&token=3af2ff3d-b499-4f0a-bdf2-6bbe14105d82"
+			},
+			{
+				"caption": "Screenshot of Upload",
+				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Faora05.jpeg?alt=media&token=3af2ff3d-b499-4f0a-bdf2-6bbe14105d82"
+			},
+			{
+				"caption": "Screenshot of Trending",
+				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Faora06.jpeg?alt=media&token=3af2ff3d-b499-4f0a-bdf2-6bbe14105d82"
 			}
+			
 		],
 		"date": "2024",
 		"tags": ["HTML", "CSS", "React Native", "React", "Expo"],
-		"website": "https://google.com",
+		"website": "",
 		"github": "https://github.com/JudeT808s/fullstack-reactNative.git"
 	},
 	{
@@ -215,7 +228,7 @@
 	],
 	"date": "2024",
 	"tags": ["HTML", "CSS", "React Native", "React", "Expo", "API", "AI", "AI-wrapper"],
-	"website": "https://google.com",
+	"website": "",
 	"github": "https://github.com/JudeT808s/beer-pairing.git"
 }
 ]

@@ -37,7 +37,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-center">
-        <Link to="/" className={(baseButtonClass)}>Judes Portfolio</Link>
+        {/* <Link to="/" className={(baseButtonClass)}>Judes Portfolio</Link> */}
       </div>
       <div className="navbar-end">
         <ThemeToggle />

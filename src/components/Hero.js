@@ -8,24 +8,24 @@ const Hero = () => {
         <img src="https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2F1701554032733.jpg?alt=media&token=3f180279-fea8-45d5-a9af-62d3385881a8" alt="Jude McCrea" className="w-32 h-32 rounded-full" />
         <h1 >About Me</h1>
         <div className='max-w-3xl mt-8'>
-        <p className= "mb-4">
-          Hello! I'm Jude McCrea, a recent graduate from IADT. I have a strong foundation in building modern,
+        <p className= "mb-4 mx-3">
+          Hello! I'm Jude, a recent graduate from IADT. I have a strong foundation in building modern,
           responsive web applications using technologies like React, Tailwind
           CSS and Firebase.
         </p>
 
-        <p className= "mb-4">
+        <p className= "mb-4 mx-3">
           I love turning ideas into reality and enjoy the process
           of crafting beautiful and functional user interfaces.
         </p>
 
-        <p className= "mb-4"> 
+        <p className= "mb-4 mx-3"> 
           I'm always eager to learn new technologies and explore
           innovative solutions to solve real-world problems.
         </p>
         
 
-        <p className= "mb-4"> 
+        <p className= "mb-4 mx-3"> 
           Let's connect! Feel free to reach out to me via email at{' '}
           <a href="mailto:jaytbas@gmail.com" className="text-blue-500">
             jaytbas@gmail.com

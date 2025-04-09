@@ -3,48 +3,60 @@ import { useTheme } from '../components/ThemeContext';
 
 const ProjectCard = ({ project }) => {
     const { isDarkMode } = useTheme(); 
+
     const tags = project.tags.map((tag, i) => (
         <div key={i} className="badge badge-neutral">
             {tag}
         </div>
     ));
 
+    const truncate = (text, length = 90) => {
+        if (!text) return '';
+        const trimmed = text.trim();
+        return trimmed.length > length ? trimmed.slice(0, length).trim() + '...' : trimmed;
+    };
+
     return (
-        <div className="card w-96 bg-base-100 shadow-xl mb-2">
-            <figure className='padding-4'>
-                <img className= 'mt-2 max-h-[200px] max-w-[250px]'src={project.images[0].path} alt={`Project: ${project.title}`} />
+        <div className="card w-full max-w-sm sm:max-w-md md:max-w-lg bg-base-100 shadow-xl mb-4 mx-auto">
+            <figure className="p-2">
+                <img 
+                    className="w-full object-contain max-h-[250px] sm:max-h-[300px] md:max-h-[350px]" 
+                    src={project.images[0].path} 
+                    alt={`Project: ${project.title}`} 
+                />
             </figure>
             <div className={`card-body ${isDarkMode ? 'text-white' : 'text-black'}`}>
                 <h2 className={`card-title ${isDarkMode ? 'text-white' : 'text-black'}`}>
                     {project.title}
                 </h2>
-                <p>{project.description}</p>
-                <div className="card-actions flex flex-wrap justify-between items-center">
-                    {tags}
+                <p className="text-sm">{truncate(project.description, 90)}</p>
 
-                    {project.website && (
+                <div className="card-actions flex flex-wrap gap-2 justify-start mt-3">
+                    {tags}
+                </div>
+
+                <div className="flex flex-col sm:flex-row sm:flex-wrap gap-2 mt-4">
+                    {project.website?.trim() !== "" && (
                         <a
                             href={project.website}
                             target="_blank"
                             rel="noreferrer"
-                            className="btn btn-primary mt-2 sm:mt-0 sm:ml-2"
+                            className="btn btn-primary w-full sm:w-auto"
                         >
                             Website
                         </a>
                     )}
-
                     {project.github && (
                         <a
                             href={project.github}
                             target="_blank"
                             rel="noreferrer"
-                            className="btn btn-primary mt-2 sm:mt-0 sm:ml-2"
+                            className="btn btn-primary w-full sm:w-auto"
                         >
                             GitHub
                         </a>
                     )}
-
-                    <Link to={`/projects/${project.slug}`} className="btn btn-primary mt-2 sm:mt-0 sm:ml-2">
+                    <Link to={`/projects/${project.slug}`} className="btn btn-primary w-full sm:w-auto">
                         Show
                     </Link>
                 </div>
