@@ -56,10 +56,6 @@
 			{
 				"caption": "Screenshot of ToDo App",
 				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2FToDoList.PNG?alt=media&token=7ffcc58d-4b87-4b56-9379-5b5670882f04"
-			},
-			{
-				"caption": "Screenshot of the code",
-				"path": "https://picsum.photos/200"
 			}
 		],
 		"date": "2023",
@@ -148,12 +144,8 @@
 
 		"images": [
 			{
-				"caption": "Screenshot of the code",
+				"caption": "Screenshot of homepage",
 				"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2FPL.png?alt=media&token=9d00e9c4-82ce-4e29-b290-66d421180160"
-			},
-			{
-				"caption": "Screenshot of the code",
-				"path": "https://picsum.photos/200"
 			}
 		],
 		"date": "2021",
@@ -207,7 +199,7 @@
 			}
 			
 		],
-		"date": "2024",
+		"date": "2025",
 		"tags": ["HTML", "CSS", "React Native", "React", "Expo"],
 		"website": "",
 		"github": "https://github.com/JudeT808s/fullstack-reactNative.git"
@@ -226,9 +218,24 @@
 			"path": "https://picsum.photos/200"
 		}
 	],
-	"date": "2024",
+	"date": "2025",
 	"tags": ["HTML", "CSS", "React Native", "React", "Expo", "API", "AI", "AI-wrapper"],
 	"website": "",
 	"github": "https://github.com/JudeT808s/beer-pairing.git"
+},
+	{
+	"slug": "spaceman-3js",
+	"title": "Astronaut in Space on demand colour mixing",
+	"description": "A work-in-progress project that uses Three.js to create a 3D model of an astronaut in space. It uses HTML, CSS and JavaScript to create a responsive website. My plan is to make this fully customizable with some API implementation in thr future.",
+	"images": [
+		{
+			"caption": "Astronaut in space",
+			"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Fspaceman.png?alt=media&token=b9f8a01f-2183-4892-80f8-3e5edd83e090"
+		}
+	],
+	"date": "2025",
+	"tags": ["HTML", "CSS", "threejs"],
+	"website": "https://judet808s.github.io/Spaceman-3js/",
+	"github": "https://github.com/JudeT808s/Spaceman-3js.git"
 }
 ]
