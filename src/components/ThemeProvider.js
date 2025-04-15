@@ -12,7 +12,6 @@ const ThemeProvider = ({ children }) => {
   
     useEffect(() => {
       localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-      // You might also apply the theme to the document body here if your ThemeProvider is the central place for this
       if (isDarkMode) {
         document.body.classList.add("dark-theme");
         document.body.classList.remove("light-theme");

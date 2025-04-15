@@ -38,10 +38,7 @@
 		"title": "Giphy App",
 		"description": "This is a Todo App I made using React. I learned about localStorage",
 		"images": [
-			{
-				"caption": "Screenshot of the code",
-				"path": "https://picsum.photos/200"
-			}
+		
 		],
 		"date": "2023",
 		"tags": ["JavaScript", "React", "HTML", "Front-end", "Rest Client", "API"],
@@ -123,14 +120,6 @@
 		"title": "Modern World Newespaper app",
 		"description": "This is a website that uses a backend database made with MySql and PHP. It has a minimalist colour palette and uses font-weight and styling to differentiate each section. Much like a classical newspaper",
 		"images": [
-			{
-				"caption": "Screenshot of the code",
-				"path": "https://picsum.photos/200"
-			},
-			{
-				"caption": "Screenshot of the code",
-				"path": "https://picsum.photos/200"
-			}
 		],
 		"date": "2021",
 		"tags": ["PHP", "Front-end", "Back-end", "CSS", "HTML", "MySql"],
@@ -158,14 +147,7 @@
 		"title": "Football expected goals predictor",
 		"description": "Using Python, Flask and APIs to track match form results and calculates probabilities of expected results for future games",
 		"images": [
-			{
-				"caption": "Screenshot of the code",
-				"path": "https://picsum.photos/200"
-			},
-			{
-				"caption": "Screenshot of the code",
-				"path": "https://picsum.photos/200"
-			}
+		
 		],
 		"date": "2024",
 		"tags": ["HTML", "CSS", "Python", "Flask", "API", "Data-visualisation"],
@@ -209,14 +191,6 @@
 	"title": "Beer Pairer App",
 	"description": "Using React Native, Expo and OpenFoodFacts API and AI to create a beer pairing app.  It also uses AI to generate suggestions for beer pairings.",
 	"images": [
-		{
-			"caption": "Screenshot of the code",
-			"path": "https://picsum.photos/200"
-		},
-		{
-			"caption": "Screenshot of the code",
-			"path": "https://picsum.photos/200"
-		}
 	],
 	"date": "2025",
 	"tags": ["HTML", "CSS", "React Native", "React", "Expo", "API", "AI", "AI-wrapper"],
