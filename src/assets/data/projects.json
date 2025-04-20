@@ -143,6 +143,18 @@
 		"github": ""
 	},
 	{
+		"slug": "furtniture-sizer",
+		"title": "Ikea furniture sizer",
+		"description": "Using Python, Flask and APIs to gague whether furniture will fit inside your car. Unfortunately the car dimensions API was taken down during production and halted the project. I plan to look into developing my own API using NodeJs in the future",
+		"images": [
+		
+		],
+		"date": "2024",
+		"tags": ["HTML", "CSS", "Python", "Flask", "API", "NodeJS"],
+		"website": "",
+		"github": "https://github.com/JudeT808s/furniture-sizer.git"
+	},
+	{
 		"slug": "python-football-predictor",
 		"title": "Football expected goals predictor",
 		"description": "Using Python, Flask and APIs to track match form results and calculates probabilities of expected results for future games",
@@ -189,11 +201,11 @@
 	{
 	"slug": "beer-pairing-app",
 	"title": "Beer Pairer App",
-	"description": "Using React Native, Expo and OpenFoodFacts API and AI to create a beer pairing app.  It also uses AI to generate suggestions for beer pairings.",
+	"description": "Using React Native, Expo and OpenFoodFacts API and AI to create a beer pairing app.  It also uses AI to generate suggestions for beer pairings and an AI chatbot to further tailor your experience. Planning to later use nodejs for user authentication and to use my own RESTful API with Spring Boot at later date",
 	"images": [
 	],
 	"date": "2025",
-	"tags": ["HTML", "CSS", "React Native", "React", "Expo", "API", "AI", "AI-wrapper"],
+	"tags": ["HTML", "CSS", "React Native", "React", "Expo", "API", "AI", "AI-wrapper", "Chatbot"],
 	"website": "",
 	"github": "https://github.com/JudeT808s/beer-pairing.git"
 },
