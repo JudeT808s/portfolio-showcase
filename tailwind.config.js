@@ -1,25 +1,20 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
-  plugins: [require('daisyui')],
   theme: {
     extend: {
-      // colors: {
-      //   'light': {
-      //     'primary': '#f3f4f6',
-      //     'secondary': '#1f2937',
-      //     // add more colors as needed
-      //   },
-      //   'dark': {
-      //     'primary': '#1f2937',
-      //     'secondary': '#f3f4f6',
-      //     // add more colors as needed
-      //   },
-      // },
+      keyframes: {
+        'fade-in': {
+          '0%': { opacity: 0, transform: 'translateY(20px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'fade-in': 'fade-in 1s ease-out forwards',
+      },
+    
     },
   },
-  plugins: [
-    require('daisyui'),
-  ],
+  plugins: [require('daisyui')],
   daisyui: {
     themes: ['light', 'dark'],
   },
