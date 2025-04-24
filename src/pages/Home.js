@@ -1,17 +1,16 @@
 import { useState, useEffect } from "react";
 import { storage } from "../firebase";
 import { ref, listAll, getDownloadURL } from "firebase/storage";
-import Hero from "../components/Hero";
 import Projects from "./projects/index";
 import { Banner } from "../components/Banner";
 import { Container } from "react-bootstrap";
-
+import Carousel from "../components/Carousel";
+import gifs from "../assets/data/gifs.json"; 
 const Home = () => {
 
   const [imageList, setImageList] = useState([]);
   const imageListRef = ref(storage, "images/");
   
-  // Apply the theme to the whole page
 
   useEffect(() => {
     listAll(imageListRef).then((response) => {
@@ -31,6 +30,7 @@ const Home = () => {
     <>
       <Container>
         <Banner />
+        <Carousel />
         <Projects />
       </Container>
     </>

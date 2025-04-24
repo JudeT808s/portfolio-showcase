@@ -81,8 +81,8 @@ export const Banner = () => {
               </div>
               <Link to={"/about"}>
 
-              <button>
-                Let's Connect
+              <button className="mt-3">
+                See more about me!
                   <ArrowRightCircle size={25} />
               </button>
               </Link>

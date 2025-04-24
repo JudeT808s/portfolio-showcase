@@ -33,6 +33,8 @@ const App = () => {
   // }, []);
 
   return (
+    <div className="font-space transition-colors duration-300">
+
     <ThemeProvider>
       <Router>
         <Navbar />
@@ -47,6 +49,7 @@ const App = () => {
         <Footer />
       </Router>
     </ThemeProvider>
+    </div>
   );
 };
 

@@ -1,53 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Base styles for the body (these will be defaults if no theme class is applied) */
+/* Base smooth transition */
 body {
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme changes */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Light theme styles */
+/* Light / Dark theme colors */
 body.light-theme {
   background-color: white;
-  color: #1e1e1e; /* Or your preferred light text color */
+  color: #1e1e1e;
 }
-
-/* Dark theme styles */
 body.dark-theme {
-  background-color: #1e1e1e; /* Or your preferred dark background color */
-  color: white; /* Or your preferred dark text color */
-}
-
-/* You can also add theme-specific styles for other common elements here */
-body.light-theme .container {
-  background-color: white;
-  color: black;
-}
-
-body.dark-theme .container {
   background-color: #1e1e1e;
   color: white;
 }
 
-body.light-theme .navbar {
-  background-color: white;
-  color: black;
-}
-
-body.dark-theme .navbar {
-  background-color: #1e1e1e; /* A slightly darker shade for dark mode navbar */
-  color: white;
-}
-
+/* Container, nav, menu overrides */
+body.light-theme .container,
+body.light-theme .navbar,
 body.light-theme .menu {
   background-color: white;
   color: black;
 }
-
+body.dark-theme .container,
+body.dark-theme .navbar,
 body.dark-theme .menu {
   background-color: #1e1e1e;
   color: white;
 }
-
-/* Add more theme-specific styles for other elements as needed */
