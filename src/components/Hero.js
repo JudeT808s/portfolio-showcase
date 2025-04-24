@@ -40,8 +40,8 @@ const Hero = () => {
         </SectionText>
         <SectionText>
           Let’s connect! Feel free to reach out via{' '}
-          <a href="mailto:jaytbas@gmail.com" className="text-blue-500 underline">
-            jaytbas@gmail.com
+          <a href="mailto:jmccrea6x@gmail.com" className="text-blue-500 underline">
+            jmccrea6x@gmail.com
           </a>
           . I’m open to collaboration and new opportunities.
         </SectionText>
