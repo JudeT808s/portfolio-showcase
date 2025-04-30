@@ -7,7 +7,7 @@ const placeholderImage =
 const truncate = (text, length = 90) =>
   text?.trim().length > length ? text.trim().slice(0, length) + "..." : text;
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, onFeatured = false }) => {
   const { isDarkMode } = useTheme();
 
   const imageUrl =
@@ -59,7 +59,7 @@ const ProjectCard = ({ project }) => {
             </a>
           )}
           <Link
-            to={`/projects/${project.slug}`}
+            to={`/${onFeatured ? "featuredProjects" : "projects"}/${project.slug}`}
             className="btn btn-primary w-full sm:w-auto"
           >
             Show

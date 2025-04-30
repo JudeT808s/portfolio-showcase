@@ -17,6 +17,7 @@ import PageNotFound from './pages/PageNotFound';
 import Activity from './pages/Activity';
 import ProjectsIndex from './pages/projects/index';
 import ProjectsShow from './pages/projects/Show';
+import FeaturedShow from './pages/featuredProjects/Show';
 
 const App = () => {
   const [imageList, setImageList] = useState([]);
@@ -45,6 +46,7 @@ const App = () => {
           <Route path="*" element={<PageNotFound />} />
           <Route path="/projects" element={<ProjectsIndex />} />
           <Route path="/projects/:slug" element={<ProjectsShow />} />
+          <Route path="/featuredProjects/:slug" element={<FeaturedShow />} />
         </Routes>
         <Footer />
       </Router>

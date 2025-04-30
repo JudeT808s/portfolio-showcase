@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { storage } from "../firebase";
 import { ref, listAll, getDownloadURL } from "firebase/storage";
-import Projects from "./projects/index";
+import Projects from "./featuredProjects/Index";
 import { Banner } from "../components/Banner";
 import { Container } from "react-bootstrap";
 import Carousel from "../components/Carousel";
