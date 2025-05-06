@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectFilter = ({ tags, selectedTag, onSelectTag }) => {
   return (
-    <div className="dropdown dropdown-closed ">
+    <div className="dropdown dropdown-closed mt-4">
       <div tabIndex={0} role="button" className="btn m-1">
         Filter by Tag
       </div>

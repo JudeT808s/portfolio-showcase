@@ -17,11 +17,11 @@ const ThemeProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
     if (isDarkMode) {
-      document.body.classList.add("dark-theme");
-      document.body.classList.remove("light-theme");
+      document.body.classList.add("dark");
+      document.body.classList.remove("light");
     } else {
-      document.body.classList.add("light-theme");
-      document.body.classList.remove("dark-theme");
+      document.body.classList.add("light");
+      document.body.classList.remove("dark");
     }
   }, [isDarkMode]);
 

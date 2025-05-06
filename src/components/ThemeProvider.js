@@ -12,14 +12,18 @@ const ThemeProvider = ({ children }) => {
   
     useEffect(() => {
       localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+      
+      const root = document.documentElement;
+    
       if (isDarkMode) {
-        document.body.classList.add("dark-theme");
-        document.body.classList.remove("light-theme");
+        root.classList.add("dark");
+        root.classList.remove("light");
       } else {
-        document.body.classList.add("light-theme");
-        document.body.classList.remove("dark-theme");
+        root.classList.add("light");
+        root.classList.remove("dark");
       }
     }, [isDarkMode]);
+    
   
     const toggleTheme = () => {
       setIsDarkMode((prevMode) => !prevMode);

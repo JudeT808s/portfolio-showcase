@@ -10,25 +10,25 @@ body {
 }
 
 /* Light / Dark theme colors */
-body.light-theme {
+body.light {
   background-color: white;
   color: #1e1e1e;
 }
-body.dark-theme {
+body.dark {
   background-color: #1e1e1e;
   color: white;
 }
 
 /* Container, nav, menu overrides */
-body.light-theme .container,
-body.light-theme .navbar,
-body.light-theme .menu {
+body.light .container,
+body.light .navbar,
+body.light .menu {
   background-color: white;
   color: black;
 }
-body.dark-theme .container,
-body.dark-theme .navbar,
-body.dark-theme .menu {
+body.dark .container,
+body.dark .navbar,
+body.dark .menu {
   background-color: #1e1e1e;
   color: white;
 }

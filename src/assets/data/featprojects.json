@@ -57,7 +57,7 @@
         "description": "An AI-powered beer pairing app using OpenFoodFacts API and React Native. AI suggests beer pairings, and a chatbot customizes the experience.",
         "date": "2025",
         "tags": ["React Native", "Expo", "API", "AI", "Chatbot"],
-        "website": "",
+        "website": "https://youtube.com/shorts/zxCt0GhdXVc",
         "github": "https://github.com/JudeT808s/beer-pairing.git",
         "design_process": {
             "research": "Analyzed existing food pairing apps and focused on AI-enhanced experiences. Wanted to make the app both fun and informative.",
@@ -71,9 +71,28 @@
                     "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FUntitled%20Design.png?alt=media&token=52713ed4-5eda-452f-845a-764243b7b057"
                 }
             ],
-            "ui_design": "Used vibrant colors to match the fun and lighthearted theme of beer pairing. The chatbot design is interactive and designed to simulate a conversational experience.",
+            "ui_design": "The chatbot design is interactive and designed to simulate a conversational experience.",
             "development": "React Native was used for development, integrating AI APIs to suggest beers and handle user interactions via chatbot. OpenFoodFacts API was used for the beer data.",
-            "testing": "Tested with a small user group to refine the chatbot responses and ensure API calls were efficient. Focused on making sure pairing suggestions were accurate and fun."
+            "testing": "Focused on making sure pairing suggestions were fun and customizable.",
+            "images": [
+                {
+                    "caption": "Current Home Screen",
+                    "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FIMG_7818.PNG?alt=media&token=26e2de1e-4c16-4c1b-ab05-b813c22e0b4d"
+                },
+                {
+                    "caption": "Current Profile Screen",
+                    "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FIMG_7819.PNG?alt=media&token=03e4f334-58ba-4fef-9380-9b0aa8dd07de"
+                },
+                {
+                    "caption": "Current Search Screen",
+                    "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FIMG_7821.PNG?alt=media&token=f672c03a-9135-4b1e-8d25-33d649ac8ab4"
+                },
+                {
+                    "caption": "Current Chatbot Screen",
+                    "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FIMG_7820.PNG?alt=media&token=595fbe96-0c00-4be9-a4aa-76035f59e88b"
+                }
+                
+            ]
         }
     },
     {
@@ -86,12 +105,7 @@
         "github": "https://github.com/JudeT808s/Spaceman-3js.git",
         "design_process": {
             "research": "Studied space-themed visuals to ensure realistic textures and models. Wanted to create a visual experience that was both interactive and engaging.",
-            "wireframes": [
-                {
-                    "caption": "Initial wireframe layout for the interactive space scene",
-                    "path": "link_to_wireframe_image_3"
-                }
-            ],
+            
             "ui_design": "Focused on the visual experience of space with a clean and simple design to highlight the astronaut and the background. Colors are chosen to represent different space environments.",
             "development": "Used Three.js for the 3D model and animation. Integrated JavaScript to allow users to mix colors interactively, offering a fun, personalized experience.",
             "testing": "Tested performance on different browsers and devices. Focused on ensuring smooth animations and responsive design."

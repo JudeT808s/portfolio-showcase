@@ -40,7 +40,7 @@ const Navbar = () => {
             <li><Link to="/" className={(baseLinkClass)}>Home</Link></li>
             <li><Link to="/about" className={(baseLinkClass)}>About</Link></li>
             <li><Link to="/activity" className={(baseLinkClass)}>Activity</Link></li>
-            <li><Link to="/projects" className={(baseLinkClass)}>Previous Projects</Link></li>
+            {/* <li><Link to="/projects" className={(baseLinkClass)}>Previous Projects</Link></li> */}
           </ul>
         </div>
       </div>

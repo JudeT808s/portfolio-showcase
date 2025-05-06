@@ -202,7 +202,10 @@
 	"slug": "beer-pairing-app",
 	"title": "Beer Pairer App",
 	"description": "Using React Native, Expo and OpenFoodFacts API and AI to create a beer pairing app.  It also uses AI to generate suggestions for beer pairings and an AI chatbot to further tailor your experience. Planning to later use nodejs for user authentication and to use my own RESTful API with Spring Boot at later date",
-	"images": [
+	"images": [{
+		"caption" : "Chatbot Screen",
+		"path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FIMG_7818.PNG?alt=media&token=26e2de1e-4c16-4c1b-ab05-b813c22e0b4d"
+	}
 	],
 	"date": "2025",
 	"tags": ["HTML", "CSS", "React Native", "React", "Expo", "API", "AI", "AI-wrapper", "Chatbot"],

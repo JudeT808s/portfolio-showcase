@@ -4,7 +4,7 @@ import projectsJSON from '../../assets/data/projects.json';
 import ProjectCard from '../../components/ProjectCard';
 import ProjectFilter from '../../components/TagDropdown';
 
-const ITEMS_PER_PAGE = 3;
+const ITEMS_PER_PAGE = 4;
 
 const Index = () => {
   const { slug } = useParams();

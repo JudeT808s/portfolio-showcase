@@ -1,10 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import projectsJSON from '../../assets/data/featprojects.json';
+import { useTheme } from '../../components/ThemeContext'; 
 
 const Show = () => {
   const { slug } = useParams();
   const project = projectsJSON.find((p) => p.slug === slug);
+  const { isDarkMode } = useTheme(); // Access current theme mode
 
   if (!project) {
     return <div className="p-6 text-center text-gray-500">Project not found.</div>;
@@ -13,10 +15,13 @@ const Show = () => {
   const { title, description, date, tags, github, website, design_process, images } = project;
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12">
+    <div
+      className={`max-w-4xl mx-auto px-6 py-12`
+    } 
+    >
       <h1 className="text-3xl font-bold mb-2">{title}</h1>
-      <p className="text-gray-600 mb-4">{date}</p>
-      <p className="mb-6">{description}</p>
+      <p className={`mb-4 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>{date}</p>
+      <p className={`mb-6 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>{description}</p>
 
       {tags?.length > 0 && (
         <div className="flex flex-wrap gap-2 mb-6">
@@ -35,7 +40,11 @@ const Show = () => {
           <div className="space-y-6">
             {Object.entries(design_process).map(([section, content]) => (
               <div key={section}>
-                <h3 className="text-lg font-medium capitalize mb-2">
+                <h3 
+                  className={`text-lg font-medium capitalize mb-2 ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  }`}
+                >
                   {section.replace(/_/g, ' ')}
                 </h3>
                 {Array.isArray(content) ? (
@@ -44,13 +53,13 @@ const Show = () => {
                       <div key={i}>
                         <img src={item.path} alt={item.caption} className="rounded shadow" />
                         {item.caption && (
-                          <p className="text-sm text-gray-500 mt-1">{item.caption}</p>
+                          <p className={`text-sm mt-1 ${isDarkMode ? 'text-white' : 'text-gray-500'}`}>{item.caption}</p>
                         )}
                       </div>
                     ))}
                   </div>
                 ) : (
-                  <p className="text-gray-700">{content}</p>
+                  <p className={`text-gray-700 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>{content}</p>
                 )}
               </div>
             ))}
@@ -67,7 +76,7 @@ const Show = () => {
               <div key={i}>
                 <img src={img.path} alt={img.caption} className="rounded shadow" />
                 {img.caption && (
-                  <p className="text-sm text-gray-500 mt-1">{img.caption}</p>
+                  <p className={`text-sm mt-1 ${isDarkMode ? 'text-white' : 'text-gray-500'}`}>{img.caption}</p>
                 )}
               </div>
             ))}

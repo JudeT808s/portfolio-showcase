@@ -3,8 +3,9 @@ import { useParams } from 'react-router-dom';
 import projectsJSON from '../../assets/data/featprojects.json';
 import ProjectCard from '../../components/ProjectCard';
 import ProjectFilter from '../../components/TagDropdown';
+import { Link } from 'react-router-dom';
 
-const ITEMS_PER_PAGE = 3;
+const ITEMS_PER_PAGE = 4;
 
 const Index = () => {
   const { slug } = useParams();
@@ -43,7 +44,7 @@ const Index = () => {
       <ProjectFilter tags={allTags} selectedTag={selectedTag} onSelectTag={handleTagChange}  />
 
       {/* Sort Controls */}
-      <div className="flex justify-center gap-4 my-4">
+      {/* <div className="flex justify-center gap-4 my-4">
         <button
           onClick={() => handleSortChange('asc')}
           className={`px-4 py-2 rounded ${sortOrder === 'asc' ? 'btn-primary text-white' : 'bg-gray-300'}`}
@@ -56,7 +57,7 @@ const Index = () => {
         >
           Sort by Year ↓
         </button>
-      </div>
+      </div> */}
 
       {/* Project Cards */}
       {paginatedProjects.length > 0 ? (
@@ -70,8 +71,9 @@ const Index = () => {
       )}
 
       {/* Pagination */}
-      <div className="flex justify-center mt-6 gap-2">
-        <button
+       <div className="flex justify-end mt-6 me-5 ">
+       {/* <Link to="/projects" className='btn'>All Projects</Link> */}
+       {/* <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
           disabled={currentPage === 1}
           className="px-3 py-1 bg-gray-300 rounded disabled:opacity-50"
@@ -93,7 +95,8 @@ const Index = () => {
           className="px-3 py-1 bg-gray-300 rounded disabled:opacity-50"
         >
           Next
-        </button>
+        </button> */} 
+        
       </div>
     </div>
   );
