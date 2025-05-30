@@ -6,7 +6,7 @@ import SectionText from './SectionText';
 const Hero = () => {
   const { isDarkMode } = useTheme();
   const cvUrl =
-    'https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/Jude%20McCreaCV.pdf?alt=media&token=9a644c56-967f-4dea-acf8-c661f23dd040';
+    'https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/JudeMcCreaCV.pdf?alt=media&token=2ebe343a-33f5-49cb-b65a-0ce47426d5ad';
 
   return (
     <div className="flex flex-col items-center px-4 py-16 space-y-8">
@@ -43,7 +43,7 @@ const Hero = () => {
           <a href="mailto:jmccrea6x@gmail.com" className="text-blue-500 underline">
             jmccrea6x@gmail.com
           </a>
-          . I’m open to collaboration and new opportunities.
+          . Open to all collaboration and new opportunities.
         </SectionText>
       </div>
 
