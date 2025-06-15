@@ -48,7 +48,7 @@ const ProjectCard = ({ project, onFeatured = false }) => {
         <img
           src={imageUrl}
           alt={`Project: ${project.title}`}
-          className="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105"
+          className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105"
         />
       </figure>
 

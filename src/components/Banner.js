@@ -58,8 +58,11 @@ export const Banner = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={5}>
             <img
-              src="https://media.licdn.com/dms/image/v2/D4E03AQHmexaZOYA-Bw/profile-displayphoto-shrink_800_800/B4EZTwwQ..GwAc-/0/1739205973694?e=1749081600&v=beta&t=E3UK9xQ2mWCRmY-rBX9YgsdQDelAuqH0AijfwZRyCi8"
+              src="https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/IMG_4996.jpeg?alt=media&token=0d1b54e2-8ff6-4dea-8f19-b0732e42f942"
               alt="Header Img"
+              className="img-fluid"
+              style={{ maxHeight: "500px", width: "100%", objectFit: "cover" }}
+              loading="lazy"
             />
           </Col>
           <Col xs={12} md={6} xl={7}>

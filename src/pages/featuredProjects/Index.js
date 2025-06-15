@@ -32,7 +32,7 @@ const Index = () => {
     setFilteredProjects(updated);
     setCurrentPage(1);
   }, [slug, selectedTag, sortOrder]);
-
+ 
   const handleTagChange = (tag) => setSelectedTag(tag);
   const handleSortChange = (order) => setSortOrder(order);
   const totalPages = Math.ceil(filteredProjects.length / ITEMS_PER_PAGE);
@@ -71,9 +71,9 @@ const Index = () => {
       )}
 
       {/* Pagination */}
-       <div className="flex justify-end mt-6 me-5 ">
-       {/* <Link to="/projects" className='btn'>All Projects</Link> */}
-       {/* <button
+       {/* { <Link to="/projects" className='btn'>All Projects</Link> */}
+       <div className="flex justify-center items-center gap-4 mt-8">
+        <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
           disabled={currentPage === 1}
           className="px-3 py-1 bg-gray-300 rounded disabled:opacity-50"
@@ -95,10 +95,9 @@ const Index = () => {
           className="px-3 py-1 bg-gray-300 rounded disabled:opacity-50"
         >
           Next
-        </button> */} 
-        
+        </button> 
       </div>
-    </div>
+      </div>
   );
 };
 

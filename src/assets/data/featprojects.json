@@ -1,120 +1,160 @@
 [
-    {
-        "slug": "php-news-app",
-        "title": "Modern World Newspaper App",
-        "description": "A minimalist web application mimicking a classical newspaper using MySQL and PHP backend. The design differentiates each section with font-weight and color styling as I was limited to only using Black, White and Grey.",
-        "date": "2021",
-        "tags": ["PHP", "CSS", "MySQL", "HTML"],
-        "website": "",
-        "github": "https://github.com/JudeT808s/Modern_World.git",
-        "design_process": {
-            "research": "Analyzed various newspaper websites to identify layout patterns and fonts that are associated with traditional journalism. Focused on simple navigation and clear section divisions.",
-            "wireframes": [
-                {
-                    "caption": "I took a lot of inspiration from broadsheets to help distinguish sections as I had a limited palette to work with.",
-                    "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FLarge%20Medium%20Small%20Frame%2027.png?alt=media&token=bbb8abca-6da4-4c94-9b7f-3a3cfdaa7fb71"
-                },
-                {
-                    "caption": "This was a take more akin to digital newspapers, with a more modern layout. I wanted to see how the design would look if I had more colors to work with.",
-                    "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FLarge%20Medium%20Small%20Frame%2027.png?alt=media&token=bbb8abca-6da4-4c94-9b7f-3a3cfdaa7fb71"
-                }
-            ],
-            "ui_design": "Minimalist design with clear typography. Colors are muted to provide an old-school feel. Fonts were carefully selected to match a classic newspaper look.",
-            "development": "Implemented using PHP for the backend with a MySQL database. Responsive design was ensured using CSS Grid and Flexbox.",
-            "testing": "Tested responsiveness on multiple devices. Focused on ensuring content layout was readable on both desktop and mobile."
-        }
-    },
-    {
-        "slug": "fullstack-movie-app",
-        "title": "Lora Fullstack Mobile App",
-        "description": "A React Native mobile app that displays generated content via an API. It uses AppWrite as the backend and integrates NativeWind for seamless styling.",
-        "date": "2025",
-        "tags": ["React Native", "Expo", "AppWrite", "NativeWind", "JavaScript"],
-        "website": "",
-        "github": "https://github.com/JudeT808s/fullstack-reactNative.git",
-        "design_process": {
-            "research": "Studied existing mobile apps in the movie and content generation space. Focused on creating a simple, engaging user interface.",
-            "wireframes": [
-                {
-                    "caption": "Initial wireframe of the landing page",
-                    "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Faora02.jpeg?alt=media&token=3af2ff3d-b499-4f0a-bdf2-6bbe14105d82"
-                }
-            ],
-            "ui_design": "The app uses a minimalistic color palette with emphasis on content, designed to engage users with smooth animations and transitions.",
-            "development": "Used React Native and Expo for mobile development. Integrated AppWrite to handle the backend services like authentication and data storage. NativeWind enabled styling that seamlessly integrates with React Native components.",
-            "testing": "Ensured the app performed well across various devices, optimized for both Android and iOS. Focused on smooth UI transitions and error-free data fetching from the API."
+  {
+    "slug": "php-news-app",
+    "title": "Modern World Newspaper App",
+    "description": "A minimalist web application mimicking a classical newspaper using MySQL and PHP backend. The design differentiates each section with font-weight and color styling as I was limited to only using Black, White and Grey.",
+    "date": "2021",
+    "tags": ["PHP", "CSS", "MySQL", "HTML"],
+    "website": "",
+    "github": "https://github.com/JudeT808s/Modern_World.git",
+    "design_process": {
+      "research": "Analyzed various newspaper websites to identify layout patterns and fonts that are associated with traditional journalism. Focused on simple navigation and clear section divisions.",
+      "wireframes": [
+        {
+          "caption": "I took a lot of inspiration from broadsheets to help distinguish sections as I had a limited palette to work with.",
+          "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FLarge%20Medium%20Small%20Frame%2027.png?alt=media&token=bbb8abca-6da4-4c94-9b7f-3a3cfdaa7fb71"
         },
-        "images": [
-            {
-                "caption": "Screenshot of the Home Screen",
-                "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Faora04.jpeg?alt=media&token=3af2ff3d-b499-4f0a-bdf2-6bbe14105d82"
-            }
-        ]
-    },
-    {
-        "slug": "beer-pairing-app",
-        "title": "Beer Pairing App",
-        "description": "An AI-powered beer pairing app using OpenFoodFacts API and React Native. AI suggests beer pairings, and a chatbot customizes the experience.",
-        "date": "2025",
-        "tags": ["React Native", "Expo", "API", "AI", "Chatbot"],
-        "website": "https://youtube.com/shorts/zxCt0GhdXVc",
-        "github": "https://github.com/JudeT808s/beer-pairing.git",
-        "design_process": {
-            "research": "Analyzed existing food pairing apps and focused on AI-enhanced experiences. Wanted to make the app both fun and informative.",
-            "wireframes": [
-                {
-                    "caption": "Initial wireframe of signup, login and welcome page",
-                    "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FDesktop%20Design.png?alt=media&token=d3d47d6b-58aa-4079-bde1-02ac4208482b"
-                },
-                {
-                    "caption": "Initial wireframe of homepage, profile and search",
-                    "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FUntitled%20Design.png?alt=media&token=52713ed4-5eda-452f-845a-764243b7b057"
-                }
-            ],
-            "ui_design": "The chatbot design is interactive and designed to simulate a conversational experience.",
-            "development": "React Native was used for development, integrating AI APIs to suggest beers and handle user interactions via chatbot. OpenFoodFacts API was used for the beer data.",
-            "testing": "Focused on making sure pairing suggestions were fun and customizable.",
-            "images": [
-                {
-                    "caption": "Current Home Screen",
-                    "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FIMG_7818.PNG?alt=media&token=26e2de1e-4c16-4c1b-ab05-b813c22e0b4d"
-                },
-                {
-                    "caption": "Current Profile Screen",
-                    "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FIMG_7819.PNG?alt=media&token=03e4f334-58ba-4fef-9380-9b0aa8dd07de"
-                },
-                {
-                    "caption": "Current Search Screen",
-                    "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FIMG_7821.PNG?alt=media&token=f672c03a-9135-4b1e-8d25-33d649ac8ab4"
-                },
-                {
-                    "caption": "Current Chatbot Screen",
-                    "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FIMG_7820.PNG?alt=media&token=595fbe96-0c00-4be9-a4aa-76035f59e88b"
-                }
-                
-            ]
+        {
+          "caption": "This was a take more akin to digital newspapers, with a more modern layout. I wanted to see how the design would look if I had more colors to work with.",
+          "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FLarge%20Medium%20Small%20Frame%205.png?alt=media&token=28ab91f5-b416-4f15-bb40-b825126e7483"
         }
+      ],
+      "ui_design": "Minimalist design with clear typography. Colors are muted to provide an old-school feel. Fonts were carefully selected to match a classic newspaper look.",
+      "development": "Implemented using PHP for the backend with a MySQL database. Responsive design was ensured using CSS Grid and Flexbox.",
+      "testing": "Tested responsiveness on multiple devices. Focused on ensuring content layout was readable on both desktop and mobile."
     },
-    {
-        "slug": "spaceman-3js",
-        "title": "Astronaut in Space on Demand Color Mixing",
-        "description": "A 3D project using Three.js to create a 3D astronaut in space, allowing on-demand color mixing with interactive elements.",
-        "date": "2025",
-        "tags": ["HTML", "CSS", "Three.js", "JavaScript"],
-        "website": "https://judet808s.github.io/Spaceman-3js/",
-        "github": "https://github.com/JudeT808s/Spaceman-3js.git",
-        "design_process": {
-            "research": "Studied space-themed visuals to ensure realistic textures and models. Wanted to create a visual experience that was both interactive and engaging.",
-            
-            "ui_design": "Focused on the visual experience of space with a clean and simple design to highlight the astronaut and the background. Colors are chosen to represent different space environments.",
-            "development": "Used Three.js for the 3D model and animation. Integrated JavaScript to allow users to mix colors interactively, offering a fun, personalized experience.",
-            "testing": "Tested performance on different browsers and devices. Focused on ensuring smooth animations and responsive design."
+    "images": [
+      {
+        "caption": "Current page",
+        "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FLarge%20Medium%20Small%20Frame%205.png?alt=media&token=28ab91f5-b416-4f15-bb40-b825126e7483"
+      }
+    ]
+  },
+  {
+    "slug": "mischaandbear",
+    "title": "Mischa & The Bear Promotional Website",
+    "description": "A promotional album website for the band Mischa & The Bear, showcasing their new music video and social media links.",
+    "date": "2025",
+    "tags": ["React", "CSS", "Three.js", "JavaScript", "NextJS", "Lovable"],
+    "website": "https://judet808s.github.io/Spaceman-3js/",
+    "github": "https://github.com/JudeT808s/why-am-i-like-this.git",
+    "design_process": {
+      "research": "Really though about what represented the band best. Early 200s aesthetic, digital age, funky visuals and fun, as well as consultation with the band themselves",
+
+      "ui_design": "Clean design with social media prominent, an individual custom linktree style page",
+      "development": "ReactJS, NextJS and Lovable, with some JQuery for the player",
+      "testing": "Tested for breakpoints and performance particularly with the speechbubbles"
+    },
+    "images": [
+      {
+        "caption": "Current page",
+        "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FScreenshot%202025-06-13%20at%2013.06.47.png?alt=media&token=0b513088-9acc-48c6-8d63-15151e7a049b"
+      },
+      {
+        "caption": "First wireframe-ish sketch of the landing page",
+        "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FScreenshot%202025-06-12%20at%2021.03.07.png?alt=media&token=888edb01-9a49-42f3-ac65-b95df536b0f7"
+      },
+      {
+        "caption": "Concept Y2k theme to fit the band's digital early 2000s aesthetic",
+        "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FScreenshot%202025-06-12%20at%2021.04.11.png?alt=media&token=e8019387-255a-484d-9359-7fb247880253"
+      },
+      {
+        "caption": "Showcasing the band's new music video",
+        "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FScreenshot%202025-06-12%20at%2021.03.40.png?alt=media&token=49a73356-8003-45e3-b2d3-93ddaf443696"
+      }
+    ]
+  },
+  {
+    "slug": "beer-pairing-app",
+    "title": "Beer Pairing App",
+    "description": "An AI-powered beer pairing app using OpenFoodFacts API and React Native. AI suggests beer pairings, and a chatbot customizes the experience.",
+    "date": "2025",
+    "tags": ["React Native", "Expo", "API", "AI", "Chatbot"],
+    "website": "https://youtube.com/shorts/zxCt0GhdXVc",
+    "github": "https://github.com/JudeT808s/beer-pairing.git",
+    "design_process": {
+      "research": "Analyzed existing food pairing apps and focused on AI-enhanced experiences. Wanted to make the app both fun and informative.",
+      "wireframes": [
+        {
+          "caption": "Initial wireframe of homepage, profile and search",
+          "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FUntitled%20Design.png?alt=media&token=52713ed4-5eda-452f-845a-764243b7b057"
         },
-        "images": [
-            {
-                "caption": "Astronaut in space model",
-                "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Fspaceman.png?alt=media&token=b9f8a01f-2183-4892-80f8-3e5edd83e090"
-            }
-        ]
+        {
+          "caption": "Initial wireframe of signup, login and welcome page",
+          "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FDesktop%20Design.png?alt=media&token=d3d47d6b-58aa-4079-bde1-02ac4208482b"
+        }
+      ],
+      "ui_design": "The chatbot design is interactive and designed to simulate a conversational experience.",
+      "development": "React Native was used for development, integrating AI APIs to suggest beers and handle user interactions via chatbot. OpenFoodFacts API was used for the beer data.",
+      "testing": "Focused on making sure pairing suggestions were fun and customizable.",
+      "images": [
+        {
+          "caption": "Current Chatbot Screen",
+          "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FScreenshot%202025-06-13%20at%2013.19.48.png?alt=media&token=67132091-5e6a-4c9c-88b4-af8f88ba9a88"
+        },
+        {
+          "caption": "Current Home Screen",
+          "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FIMG_7818.PNG?alt=media&token=26e2de1e-4c16-4c1b-ab05-b813c22e0b4d"
+        },
+        {
+          "caption": "Current Profile Screen",
+          "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FIMG_7819.PNG?alt=media&token=03e4f334-58ba-4fef-9380-9b0aa8dd07de"
+        },
+        {
+          "caption": "Current Search Screen",
+          "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/featprojects%2FIMG_7821.PNG?alt=media&token=f672c03a-9135-4b1e-8d25-33d649ac8ab4"
+        }
+      ]
     }
+  },
+  {
+    "slug": "fullstack-movie-app",
+    "title": "Lora Fullstack Mobile App",
+    "description": "A React Native mobile app that displays generated content via an API. It uses AppWrite as the backend and integrates NativeWind for seamless styling.",
+    "date": "2025",
+    "tags": ["React Native", "Expo", "AppWrite", "NativeWind", "JavaScript"],
+    "website": "",
+    "github": "https://github.com/JudeT808s/fullstack-reactNative.git",
+    "design_process": {
+      "research": "Studied existing mobile apps in the movie and content generation space. Focused on creating a simple, engaging user interface.",
+      "wireframes": [
+        {
+          "caption": "Initial wireframe of the landing page",
+          "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Faora02.jpeg?alt=media&token=3af2ff3d-b499-4f0a-bdf2-6bbe14105d82"
+        }
+      ],
+      "ui_design": "The app uses a minimalistic color palette with emphasis on content, designed to engage users with smooth animations and transitions.",
+      "development": "Used React Native and Expo for mobile development. Integrated AppWrite to handle the backend services like authentication and data storage. NativeWind enabled styling that seamlessly integrates with React Native components.",
+      "testing": "Ensured the app performed well across various devices, optimized for both Android and iOS. Focused on smooth UI transitions and error-free data fetching from the API."
+    },
+    "images": [
+      {
+        "caption": "Screenshot of the Home Screen",
+        "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Faora04.jpeg?alt=media&token=3af2ff3d-b499-4f0a-bdf2-6bbe14105d82"
+      }
+    ]
+  },
+
+  {
+    "slug": "spaceman-3js",
+    "title": "Astronaut in Space on Demand Color Mixing",
+    "description": "A 3D project using Three.js to create a 3D astronaut in space, allowing on-demand color mixing with interactive elements.",
+    "date": "2025",
+    "tags": ["HTML", "CSS", "Three.js", "JavaScript"],
+    "website": "https://judet808s.github.io/Spaceman-3js/",
+    "github": "https://github.com/JudeT808s/Spaceman-3js.git",
+    "design_process": {
+      "research": "Studied space-themed visuals to ensure realistic textures and models. Wanted to create a visual experience that was both interactive and engaging.",
+
+      "ui_design": "Focused on the visual experience of space with a clean and simple design to highlight the astronaut and the background. Colors are chosen to represent different space environments.",
+      "development": "Used Three.js for the 3D model and animation. Integrated JavaScript to allow users to mix colors interactively, offering a fun, personalized experience.",
+      "testing": "Tested performance on different browsers and devices. Focused on ensuring smooth animations and responsive design."
+    },
+    "images": [
+      {
+        "caption": "Astronaut in space model",
+        "path": "https://firebasestorage.googleapis.com/v0/b/jude-portfolio-e99bb.appspot.com/o/images%2Fspaceman.png?alt=media&token=b9f8a01f-2183-4892-80f8-3e5edd83e090"
+      }
+    ]
+  }
 ]
